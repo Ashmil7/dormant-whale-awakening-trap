@@ -1,0 +1,18 @@
+ethereum_rpc = "https://ethereum-hoodi-rpc.publicnode.com"
+drosera_rpc = "https://relay.hoodi.drosera.io"
+eth_chain_id = 560048
+drosera_address = "0x91cB447BaFc6e0EA0F4Fe056F5a9b1F14bb06e5D"
+
+[traps]
+
+[traps.dormantwhaletrap]
+path = "out/Trap.sol/DormantWhaleTrap.json"
+response_contract = "0xb8e33155c4e69c38a224e72222B1b4e3F16038b9"  # <- your AlertReceiver
+response_function = "handleAlert(string)"
+cooldown_period_blocks = 33
+min_number_of_operators = 1
+max_number_of_operators = 2
+block_sample_size = 10
+private_trap = true
+whitelist = ["0xd4C846d7c6B885Eef3C7C1743B6e86891C83ddF1"]
+address = "0xb59ca593531e88b217ccdf9a0e6135ccc6175aee"
