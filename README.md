@@ -8,7 +8,7 @@ This Drosera trap detects suspicious large transactions from wallets that have b
 
 - Monitors a hardcoded whale wallet address.
 - Checks if it has been inactive for over 100 blocks.
-- If a big transaction (>1 ETH) is detected after dormancy, it sends an on-chain alert.
+- If a big transaction (>10 ETH) is detected after dormancy, it sends an on-chain alert.
 
 ## 📁 Key Files
 
